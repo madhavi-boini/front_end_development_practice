@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table{
+        width: 900px;
+      }
+    label{
+        margin: 10px;
+    }
+    select{
+        width: 362px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 4px;
+    }
+      button {
+        margin-left: 17px;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 3px solid rgba(115, 146, 231, 0.774);
+        border-radius: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .select{
+          margin-top: -50px;
+      }
+      .parent{
+          padding: 20px;
+          margin: 20px;
+          width: 70%;
+
+      }      
+
+      .input,textarea{
+        margin-left: 30px;
+          width: 350px;
+          padding: 5px;
+          margin: 5px;
+          border-radius: 4px;
+      }
+      .t1{
+        border-radius: 5px;
+          border: 2px solid rgb(167, 163, 163);
+          margin: 20px;
+          padding: 20px;
+      }
+
+      r {
+        color: red;
+      }
+      h3{
+        width: fit-content;
+          margin-top: -30px;
+          margin-left: 1px;
+          background-color: white;
+      }
+      .text{
+          margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+    <div class="text">
+      <h1>Zoo Keeper Application Form</h1>
+      <em
+        >Please complete the form.Mandatory fields are marked with a
+        <r>*</r></em>
+    </div>
+    
+    <form>
+        <div class="t1">
+      <h3 >CONTACT DETAILS</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="name">Name<r>*</r> </label>
+            </td>
+            <td><input class="input" type="text" id="name" name="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="Tphone">Telephone</label></td>
+            <td><input class="input"  type="number" id="Tphone" name="Tphone" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Email">Email<r>*</r></label>
+            </td>
+            <td><input class="input"  type="email" id="Email" name="Email" /></td>
+          </tr>
+          <tr>
+              </tbody>
+      </table>
+        </div>
+       
+        <div class="t1">
+<h3>PERSONAL INFORMATION</h3>
+<table style="width: 730px;">
+    <tbody>
+        </tr>
+          <tr>
+            <td>
+               <label for="age"><r>*</r>Age</label>
+            </td>
+            <td><input class="input"  type="number" id="age" name="age" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <select name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="select">
+              <label for="why"
+                >When did you </label>
+                <br>
+                 <label for="why">first know you</label> 
+                 <br> 
+                 <label for="why"> wanted to be a </label>
+                 <br>
+                 <label for="why"> zoo-keeper?</label>
+              
+            </div>
+            </td>
+            <td>
+              <textarea name="why" id="why" cols="30" rows="7"></textarea>
+            </td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+    <div class="t1">
+          <h3>PICK YOUR FAVORITE ANIMALS</h3>
+          <table>
+              <tbody>
+          <tr>
+            <td>
+              <input type="checkbox" id="pick1" />
+              <label for="pick1">Zebra</label>
+            </td>
+            <td>
+              <input type="checkbox" id="pick2" />
+              <label for="pick2">Cat</label>
+            </td>
+            <td>
+              <input type="checkbox" id="pick3" />
+              <label for="pick3">Anaconda</label>
+            </td>
+            <td>
+              <input type="checkbox" id="pick4" />
+              <label for="pick4">Human</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="cp" type="checkbox" id="pick5" />
+              <label for="pick5">Elephant</label>
+            </td>
+            <td>
+              <input  class="cp" type="checkbox" id="pick6" />
+              <label for="pick6">Wildebeest</label>
+            </td>
+            <td>
+              <input class="cp" type="checkbox" id="pick7" />
+              <label for="pick7">Pigeon</label>
+            </td>
+            <td>
+              <input class="cp" type="checkbox" id="pick8" />
+              <label for="pick8">Crab</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      <button type="submit">Submit Application</button>
+    </form>
+    </div>
+  </body>
+</html>

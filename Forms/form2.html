@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border:3px solid  cornflowerblue;
+            padding: 10px;
+            margin-left: 250px;
+            width: 50%;
+            background-color: rgb(205, 205, 247);
+            
+        }
+        button{
+            margin-left:30px ;
+            padding-left:60px ;
+            padding-right: 60px;
+            padding-top: 10px;
+            padding-bottom:10px ;
+            color: white;
+            background-color: black;
+                    }
+        label{
+            float: right;
+        }
+       table{
+           width: 900px;
+           padding: 20px;
+       }
+       input,textarea{
+           padding: 10px;
+           margin: 10px;
+           margin-left: 20px;
+           width: 350px;
+           border:3px solid rgb(160, 160, 240);
+           border-radius:5px;
+           float: left;
+       }
+       .message{
+           margin-top: -85px;
+       }
+       select{
+        padding: 10px;
+           margin-left: 20px;
+           margin-bottom: 10px;
+           border-radius:5px;   
+           float: left;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+
+        <table>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <label for="name"><b>Name</b></label>
+                        <br>
+                        <label>Add your name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="text" name="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"><b>Email</b></label>
+                        <br>
+                        <label>Enter a valid Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="phone"><b>Phone</b></label>
+                        <br>
+                        <label>Add a phone number</label>
+                    </td>
+                    <td>
+                        <input type="number" id="phone" name="phone">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="wb"><b>Website</b></label>
+                        <br>
+                        <label>Your Website</label>
+                    </td>
+                    <td>
+                        <input type="text" id="wb" name="wb">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Priority"><b>Priority</b></label>
+                        <br>
+                        <label>Priority level</label>
+                    </td>
+                    <td>
+                        <select  name="priority" id="priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="type"><b>Type</b></label>
+                        <br>
+                        <label>Type of Contact</label>
+                    </td>
+                    <td>
+                        <select name="type" id="type">
+                            <option value="Website Update">Website Update</option>
+                        </select>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <div class="message">
+                        <label  for="msg"><b>Message</b></label>
+                        <br>
+                        <label  >Type Your Message</label>
+                    </div>
+                    </td>
+                    <td>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <button
+                        type="submit">Submit</button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

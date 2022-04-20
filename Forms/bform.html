@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        
+        .parent{
+            background-color: rgb(213, 213, 243);
+            max-width: 750px;
+        }
+        label{
+            float: right;
+        }
+       input,textarea{
+           padding: 5px;
+           margin: 10px;
+           margin-left: 20px;
+           width: 350px;
+           border:3px solid rgb(160, 160, 240);
+           border-radius:5px;
+          
+       }
+       .message{
+           margin-top: -85px;
+       }
+      
+    </style>
+
+
+</head>
+<body>
+    <div class="container mt-2">
+    <div class="parent p-3 border-5 border border-primary ">
+
+        <table class="table-responsive p-3" >
+            <tbody>
+
+                <tr>
+                    <td>
+                        <label for="name"><b>Name</b></label>
+                        <br>
+                        <label for="name" >Add your name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"><b>Email</b></label>
+                        <br>
+                        <label for="email" >Enter a valid Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="phone"><b>Phone</b></label>
+                        <br>
+                        <label for="phone">Add a phone number</label>
+                    </td>
+                    <td>
+                        <input type="number" id="phone" name="phone">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="wb"><b>Website</b></label>
+                        <br>
+                        <label for="wb">Your Website</label>
+                    </td>
+                    <td>
+                        <input type="text" id="wb" name="wb">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Priority"><b>Priority</b></label>
+                        <br>
+                        <label for="Priority" style="margin-right: -55px;" >Priority level</label>
+                    </td>
+                    <td>
+                        <div style="margin-left: 20px;" class="btn-group ">
+                            <button class="btn btn-outline-dark bg-white" >Low</button>
+                            <button  class="btn btn-primary dropdown-toggle"  data-toggle="dropdown"></button>
+                          <div class="dropdown-menu">
+                           <a href="#" class="dropdown-item">High</a>
+                           <a href="#" class="dropdown-item">medium</a>
+                          </div>
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="type"><b>Type</b></label>
+                        <br>
+                        <label for="type" style="margin-right: -37px;">Type of Contact</label>
+                    </td>
+                    <td>
+                        <div style="margin-left: 20px;" class="btn-group ">
+                            <button class="btn btn-outline-dark bg-white">Website Update</button>
+                            <button  class="btn btn-primary dropdown-toggle"  data-toggle="dropdown"></button>
+                          <div class="dropdown-menu">
+                           <a href="#" class="dropdown-item">update</a>
+                           <a href="#" class="dropdown-item">restart</a>
+                          </div>
+                        </div>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <div class="message">
+                        <label  for="msg"><b>Message</b></label>
+                        <br>
+                        <label for="msg" >Type Your Message</label>
+                    </div>
+                    </td>
+                    <td>
+                        <textarea name="msg" id="msg" cols="30" rows="6"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <button class="btn-dark ml-4 pl-5 pr-5 pt-2 pb-2 "
+                        type="submit">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
